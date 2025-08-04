@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fernandes Soluções & Reformas - Reformas em Belo Horizonte/MG</title>
+    <meta name="description" content="Soluções completas para reformas e construções em Belo Horizonte. Equipe qualificada, compromisso com prazos e ótimo custo-benefício.">
+    <meta name="keywords" content="reforma, construção, Belo Horizonte, demolição, alvenaria, elétrica, hidráulica, gesso, drywall, pintura, Fernandes Soluções & Reformas">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #000;
+            color: #fff;
+            padding-top: 5rem; /* Espaço para o menu fixo */
+        }
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .text-yellow-400 {
+            color: #facc15;
+        }
+        .bg-yellow-400 {
+            background-color: #facc15;
+        }
+        .btn-hover:hover {
+            opacity: 0.8;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(250, 204, 21, 0.4);
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .whatsapp-float {
+            right: 1.5rem;
+            bottom: 1.5rem;
+            transition: all 0.3s ease-in-out;
+            z-index: 50;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+        /* Estilos específicos para o menu mobile */
+        #mobile-menu {
+            transition: max-height 0.3s ease-in-out;
+            overflow: hidden;
+            max-height: 0;
+        }
+        #mobile-menu.open {
+            max-height: 500px; /* Valor arbitrário grande para mostrar todo o menu */
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+
+    <!-- Ícone de WhatsApp Flutuante -->
+    <a href="https://wa.me/5531983426962?text=Olá! Gostaria de informações sobre reformas." target="_blank" class="fixed p-4 rounded-full bg-green-500 text-white text-2xl shadow-lg whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Menu de Navegação Fixo -->
+    <nav class="fixed top-0 left-0 w-full bg-black z-40 shadow-lg py-4 px-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo da Empresa -->
+            <a href="#hero" class="flex items-center space-x-2">
+                <img src="assets/logo.png" alt="Logo da Fernandes Soluções & Reformas" class="h-12 w-auto">
+                <span class="text-xl font-bold text-white hidden md:block">Fernandes Soluções & Reformas</span>
+            </a>
+            
+            <!-- Botão do menu mobile -->
+            <button id="menu-btn" class="md:hidden text-white text-3xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <!-- Menu de navegação para desktop -->
+            <div id="mobile-menu-container" class="md:flex md:items-center space-x-8 hidden">
+                <a href="#sobre" class="text-white hover:text-yellow-400 transition-colors duration-300">Sobre</a>
+                <a href="#servicos" class="text-white hover:text-yellow-400 transition-colors duration-300">Serviços</a>
+                <a href="#depoimentos" class="text-white hover:text-yellow-400 transition-colors duration-300">Depoimentos</a>
+                <a href="#contato" class="text-white hover:text-yellow-400 transition-colors duration-300">Contato</a>
+            </div>
+        </div>
+        <!-- Menu de navegação para mobile (oculto por padrão) -->
+        <div id="mobile-menu" class="md:hidden flex flex-col items-center mt-4 bg-gray-900 rounded-lg shadow-xl">
+            <a href="#sobre" class="block w-full text-center py-3 text-white hover:bg-gray-800 transition-colors duration-300">Sobre</a>
+            <a href="#servicos" class="block w-full text-center py-3 text-white hover:bg-gray-800 transition-colors duration-300">Serviços</a>
+            <a href="#depoimentos" class="block w-full text-center py-3 text-white hover:bg-gray-800 transition-colors duration-300">Depoimentos</a>
+            <a href="#contato" class="block w-full text-center py-3 text-white hover:bg-gray-800 transition-colors duration-300">Contato</a>
+        </div>
+    </nav>
+    
+    <!-- Seção Principal / Hero Section -->
+    <header id="hero" class="relative py-20 px-4 md:py-32 bg-[url('assets/imagens/hero-bg.jpg')] bg-cover bg-center bg-no-repeat">
+        <!-- Overlay para escurecer a imagem de fundo e melhorar a legibilidade do texto -->
+        <div class="absolute inset-0 bg-black/70"></div>
+        <div class="container mx-auto max-w-4xl relative z-10 text-center">
+            <div class="flex justify-center mb-6">
+                <img src="assets/logo.png" alt="Logo da Fernandes Soluções & Reformas" class="h-24 w-auto">
+            </div>
+            <h1 class="text-3xl md:text-5xl font-extrabold leading-tight mb-4">
+                Reformas com <span class="text-yellow-400">Qualidade e Compromisso</span> em Belo Horizonte
+            </h1>
+            <p class="text-lg md:text-xl font-light mb-8">
+                Soluções completas para transformar seu lar ou comércio com rapidez, segurança e acabamento profissional.
+            </p>
+            <a href="https://wa.me/5531983426962?text=Olá! Gostaria de informações sobre reformas." target="_blank" class="inline-block px-8 py-4 bg-yellow-400 text-black text-lg font-bold rounded-full shadow-lg transition-all duration-300 btn-hover">
+                <i class="fab fa-whatsapp mr-2"></i> Fale agora no WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <!-- Seção Sobre a Empresa -->
+    <section id="sobre" class="bg-gray-900 py-20 px-4">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center text-yellow-400">Sobre Nós</h2>
+            <div class="md:flex md:items-center md:space-x-12">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <p class="text-lg leading-relaxed mb-6">
+                        A Fernandes Soluções & Reformas oferece serviços especializados em reforma e construção com excelência em cada detalhe. Com atuação em Belo Horizonte/MG, somos especialistas em transformar espaços com agilidade, responsabilidade e preços justos.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-base">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-check-circle text-yellow-400"></i>
+                            <span>Equipe qualificada</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-check-circle text-yellow-400"></i>
+                            <span>Atendimento rápido</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-check-circle text-yellow-400"></i>
+                            <span>Compromisso com prazos</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-check-circle text-yellow-400"></i>
+                            <span>Ótimo custo-benefício</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Imagem ilustrativa para a seção Sobre -->
+                <div class="md:w-1/2">
+                    <img src="assets/imagens/equipe.jpg" alt="Equipe de profissionais qualificados da Fernandes Soluções & Reformas" class="w-full h-auto rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Serviços -->
+    <section id="servicos" class="py-20 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-yellow-400">Nossos Serviços</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Serviço 1: Demolição -->
+                <div class="bg-gray-900 rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 service-card">
+                    <img src="assets/imagens/demolicao.jpg" alt="Trabalhadores demolindo uma parede" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-yellow-400">Demolição</h3>
+                        <p class="text-gray-300 mb-4">
+                            Executamos demolições seguras e controladas, com retirada de pisos, revestimentos e estruturas sem comprometer o restante do ambiente.
+                        </p>
+                        <a href="https://wa.me/5531983426962?text=Olá! Tenho interesse em serviços de demolição." target="_blank" class="inline-block w-full text-center px-4 py-3 bg-yellow-400 text-black font-bold rounded-lg transition-all duration-300 btn-hover">
+                            <i class="fab fa-whatsapp mr-2"></i> Solicitar orçamento
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Serviço 2: Alvenaria -->
+                <div class="bg-gray-900 rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 service-card">
+                    <img src="assets/imagens/alvenaria.jpg" alt="Construção de parede de tijolos com nível a laser" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-yellow-400">Alvenaria</h3>
+                        <p class="text-gray-300 mb-4">
+                            Construção e reboco de paredes, instalação de bancadas, rodapés, pilares e demais estruturas de alvenaria com acabamento perfeito.
+                        </p>
+                        <a href="https://wa.me/5531983426962?text=Olá! Quero um orçamento para serviço de alvenaria." target="_blank" class="inline-block w-full text-center px-4 py-3 bg-yellow-400 text-black font-bold rounded-lg transition-all duration-300 btn-hover">
+                            <i class="fab fa-whatsapp mr-2"></i> Orçamento para alvenaria
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Serviço 3: Instalações Elétricas -->
+                <div class="bg-gray-900 rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 service-card">
+                    <img src="assets/imagens/eletrica.jpg" alt="Eletricista instalando fiação em um quadro de distribuição" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-yellow-400">Instalações Elétricas</h3>
+                        <p class="text-gray-300 mb-4">
+                            Montagem de quadros de distribuição, passagem de cabos e fios, instalação de luminárias e toda a parte elétrica com segurança e padrão técnico.
+                        </p>
+                        <a href="https://wa.me/5531983426962?text=Olá! Preciso de serviços elétricos em meu imóvel." target="_blank" class="inline-block w-full text-center px-4 py-3 bg-yellow-400 text-black font-bold rounded-lg transition-all duration-300 btn-hover">
+                            <i class="fab fa-whatsapp mr-2"></i> Falar sobre elétrica
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Serviço 4: Serviços Hidráulicos -->
+                <div class="bg-gray-900 rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 service-card">
+                    <img src="assets/imagens/hidraulica.jpg" alt="Encanador ajustando conexões de tubulação de PVC" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-yellow-400">Serviços Hidráulicos</h3>
+                        <p class="text-gray-300 mb-4">
+                            Instalação de tubulações, registros, caixas d’água e manutenção de encanamentos em banheiros, cozinhas e áreas externas.
+                        </p>
+                        <a href="https://wa.me/5531983426962?text=Olá! Preciso de orçamento para serviço hidráulico." target="_blank" class="inline-block w-full text-center px-4 py-3 bg-yellow-400 text-black font-bold rounded-lg transition-all duration-300 btn-hover">
+                            <i class="fab fa-whatsapp mr-2"></i> Quero orçamento hidráulico
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Serviço 5: Gesso & Drywall -->
+                <div class="bg-gray-900 rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 service-card">
+                    <img src="assets/imagens/gesso.jpg" alt="Montagem de teto de gesso com iluminação embutida" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-yellow-400">Gesso & Drywall</h3>
+                        <p class="text-gray-300 mb-4">
+                            Aplicação de forros, divisórias, sancas e tetos com drywall e gesso liso. Ideal para modernizar o ambiente com praticidade e leveza.
+                        </p>
+                        <a href="https://wa.me/5531983426962?text=Olá! Quero orçamento para instalação de gesso ou drywall." target="_blank" class="inline-block w-full text-center px-4 py-3 bg-yellow-400 text-black font-bold rounded-lg transition-all duration-300 btn-hover">
+                            <i class="fab fa-whatsapp mr-2"></i> Falar sobre gesso/Drywall
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Serviço 6: Pintura em geral -->
+                <div class="bg-gray-900 rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 service-card">
+                    <img src="assets/imagens/pintura.jpg" alt="Pintor usando rolo em uma parede branca com fita de proteção" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-yellow-400">Pintura em geral</h3>
+                        <p class="text-gray-300 mb-4">
+                            Pintura residencial e comercial com acabamentos lisos, texturizados ou especiais. Trabalhamos com materiais de qualidade e limpeza no local.
+                        </p>
+                        <a href="https://wa.me/5531983426962?text=Olá! Preciso de serviço de pintura." target="_blank" class="inline-block w-full text-center px-4 py-3 bg-yellow-400 text-black font-bold rounded-lg transition-all duration-300 btn-hover">
+                            <i class="fab fa-whatsapp mr-2"></i> Solicitar pintura
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Depoimentos -->
+    <section id="depoimentos" class="bg-gray-900 py-20 px-4">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-yellow-400">O que dizem nossos clientes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Depoimento 1 -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-xl">
+                    <p class="italic text-gray-300 mb-4">“Serviço ágil e caprichado. Minha cozinha ficou linda!”</p>
+                    <p class="font-bold text-yellow-400">— Mariana, Bairro Buritis</p>
+                </div>
+                <!-- Depoimento 2 -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-xl">
+                    <p class="italic text-gray-300 mb-4">“Muito profissionais, do orçamento até a entrega. Nota 10!”</p>
+                    <p class="font-bold text-yellow-400">— João, Bairro Prado</p>
+                </div>
+                <!-- Depoimento 3 -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-xl">
+                    <p class="italic text-gray-300 mb-4">“Recomendo! Fizeram a reforma do meu apartamento com muito cuidado.”</p>
+                    <p class="font-bold text-yellow-400">— Bruna, Bairro Anchieta</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Chamada Final / Contato -->
+    <section id="contato" class="py-20 px-4 text-center">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-yellow-400">
+                Vamos começar sua reforma hoje?
+            </h2>
+            <p class="text-lg md:text-xl font-light mb-8">
+                Fale com a Fernandes Soluções & Reformas agora mesmo pelo WhatsApp. Atendemos Belo Horizonte e região com rapidez e confiança.
+            </p>
+            <a href="https://wa.me/5531983426962?text=Olá! Quero falar sobre minha reforma." target="_blank" class="inline-block px-10 py-5 bg-yellow-400 text-black text-lg font-bold rounded-full shadow-lg transition-all duration-300 btn-hover">
+                <i class="fab fa-whatsapp mr-2"></i> Clique aqui e envie sua mensagem
+            </a>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-900 text-gray-400 py-8 px-4 text-center">
+        <div class="container mx-auto">
+            <p class="mb-2">&copy; 2025 Fernandes Soluções & Reformas – Belo Horizonte/MG</p>
+            <p class="text-lg font-semibold">📞 (31) 98342-6962</p>
+        </div>
+    </footer>
+
+    <!-- Script para o menu mobile -->
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('open');
+        });
+        
+        // Fechar o menu ao clicar em um link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                const mobileMenu = document.getElementById('mobile-menu');
+                mobileMenu.classList.remove('open');
+            });
+        });
+    </script>
+</body>
+</html>
